@@ -1,7 +1,9 @@
 # HackerRank
 
-##Solutions to:
+Solutions to:
 
-###Problem | File
+Problem | File
 
-Attending Workshops | HackerRank-Workshops.cpp
+Attending Workshops | HackerRank\_Workshops.cpp
+
+Bit Array | HackerRank\_Brents\_Algorithm\_Cyclic\_Detection.cpp
