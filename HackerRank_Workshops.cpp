@@ -1,16 +1,3 @@
-//#include <cmath>
-//#include <iomanip>
-//#include <iostream>
-//#include <vector>
-//#include <set>
-//#include <map>
-//#include <string>
-//#include <fstream>
-//#include <sstream>
-//#include <algorithm>
-//#include <cassert>
-//#include <bitset>
-
 #include <iomanip>
 #include <iostream>
 #include <algorithm>
