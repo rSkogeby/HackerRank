@@ -1,6 +1,7 @@
 # HackerRank
 
-Solutions to:
+##Solutions to:
 
-Problem | File:
+###Problem | File
+
 Attending Workshops | HackerRank-Workshops.cpp
