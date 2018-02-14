@@ -13,3 +13,5 @@ Quadrant Queries | HackerRank\_Quadrant\_Queries.cpp
 C++ Variadics | HackerRank\_cpp\_Variadics.cpp
 
 Attribute Parser | HackerRank\_Attribute\_Parser.cpp
+
+Deque-STL | HackerRank\_Deque\_STL.cpp
