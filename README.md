@@ -25,3 +25,6 @@ Left Rotation | PS\_Left\_Rotation.cpp
 Insert a Node at the Tail of a Linked List | PS\_Insert\_Node\_at\_Tail.cpp
 
 Insert a Node at the Head of a Linked List | PS\_Insert\_Node\_at\_Head.cpp
+
+Insert a node at a specific position in a linked list | PS\_Insert\_Node\_at\_Specific.cpp
+
