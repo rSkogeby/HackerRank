@@ -21,3 +21,5 @@ Magic Spells | HackerRank\_Magic\_Spells.cpp
 Dynamic Array | PS\_Dynamic\_Array.cpp
 
 Left Rotation | PS\_Left\_Rotation.cpp
+
+Insert a Node at the Tail of a Linked List | PS\_Insert\_Node\_at\_Tail.cpp
