@@ -5,41 +5,41 @@ using namespace std;
 
 void printKMax(int arr[], int n, int k){
 
-	deque<int> slidingWindow(k);
+  deque<int> slidingWindow(k);
 
-	for(int i = 0; i < k; ++i){
-	
-		// If arr[i] is beq than end of queue, remove end  
-		while( !slidingWindow.empty() && arr[i] >= arr[slidingWindow.back()] ){
-			slidingWindow.pop_back();
-		}
-		// Store index to max array value
-		slidingWindow.push_back(i);
-	}
-	for (int i = k; i < n; i++){
-		
-		// Front of queue contains largest element index
-		printf("%d ",arr[slidingWindow.front()]);
+  for(int i = 0; i < k; ++i){
+  
+    // If arr[i] is beq than end of queue, remove end  
+    while( !slidingWindow.empty() && arr[i] >= arr[slidingWindow.back()] ){
+      slidingWindow.pop_back();
+    }
+    // Store index to max array value
+    slidingWindow.push_back(i);
+  }
+  for (int i = k; i < n; i++){
+    
+    // Front of queue contains largest element index
+    printf("%d ",arr[slidingWindow.front()]);
 
-		// Remove elements outside window 
-		while( !slidingWindow.empty() && slidingWindow.front() <= i-k ){
+    // Remove elements outside window 
+    while( !slidingWindow.empty() && slidingWindow.front() <= i-k ){
 
-			slidingWindow.pop_front();
+      slidingWindow.pop_front();
 
-		}
-		
-		// If arr[i] is beq than end of queue, remove end  
-		while( !slidingWindow.empty() && arr[i] >= arr[slidingWindow.back()] ){
+    }
+    
+    // If arr[i] is beq than end of queue, remove end  
+    while( !slidingWindow.empty() && arr[i] >= arr[slidingWindow.back()] ){
 
-			slidingWindow.pop_back();
+      slidingWindow.pop_back();
 
-		}
+    }
 
-		slidingWindow.push_back(i);
+    slidingWindow.push_back(i);
 
-	}
+  }
 
-	printf("%d\n",arr[slidingWindow.front()]);
+  printf("%d\n",arr[slidingWindow.front()]);
 
 }
 int main(){
