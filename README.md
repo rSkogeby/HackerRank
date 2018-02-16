@@ -33,3 +33,5 @@ Delete a node | PS\_Delete\_Node\_at\_Position.cpp
 Merge two sorted linked lists | PS\_Merge\_Nodes\_of\_Lists.cpp
 
 Get Node Value | PS\_Get\_Node\_Value.cpp
+
+Delete duplicate-value nodes from a sorted linked list | PS\_Make\_Node\_Unique.cpp
