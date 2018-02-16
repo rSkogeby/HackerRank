@@ -29,3 +29,5 @@ Insert a Node at the Head of a Linked List | PS\_Insert\_Node\_at\_Head.cpp
 Insert a node at a specific position in a linked list | PS\_Insert\_Node\_at\_Specific.cpp
 
 Delete a node | PS\_Delete\_Node\_at\_Position.cpp
+
+Merge two sorted linked lists | PS\_Merge\_Nodes\_of\_Lists.cpp
