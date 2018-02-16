@@ -31,3 +31,5 @@ Insert a node at a specific position in a linked list | PS\_Insert\_Node\_at\_Sp
 Delete a node | PS\_Delete\_Node\_at\_Position.cpp
 
 Merge two sorted linked lists | PS\_Merge\_Nodes\_of\_Lists.cpp
+
+Get Node Value | PS\_Get\_Node\_Value.cpp
