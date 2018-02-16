@@ -20,29 +20,33 @@ Start on 1
                      /
      [List #2] p--->q
 
-
+  Iterators do asame amount of steps in the x-y-z part.
+  However, if #1 and #2 are not of equal length, 
+  they will be equal during the second loop
+  This is because the paths preceding the tail of xyz, i.e. 
+  a->b->c and p->q will have been traversed by both iterators. 
 
 */  
-  Node* loop = headA;
-  Node* crossing = headB;
-  while(loop != crossing){
+  Node* currentA = headA;
+  Node* currentB = headB;
+  while(currentA != currentB){
     
-    if(!loop->next){
-      loop = headB;
+    if(!currentA->next){
+      currentA = headB;
     } else {
-      loop = loop->next;
+      currentA = currentA->next;
     }
       
-    if(!crossing->next){
-      crossing = headA;
+    if(!currentB->next){
+      currentB = headA;
     } else {
-      crossing = crossing->next;
+      currentB = currentB->next;
     }
       
   
   }  
   
-  return crossing->data;  
+  return currentB->data;  
 }
 
 Node* RemoveDuplicates(Node* head){
