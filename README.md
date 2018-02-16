@@ -37,3 +37,5 @@ Get Node Value | PS\_Get\_Node\_Value.cpp
 Delete duplicate-value nodes from a sorted linked list | PS\_Make\_Node\_Unique.cpp
 
 Find Merge Point of Two Lists | PS\_Node\_Merge\_Points.cpp
+
+Inserting a Node Into a Sorted Doubly Linked List | PS\_Doubly\_Linked\_List\_NodeInsertOrderedAscending.cpp
