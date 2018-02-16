@@ -35,3 +35,5 @@ Merge two sorted linked lists | PS\_Merge\_Nodes\_of\_Lists.cpp
 Get Node Value | PS\_Get\_Node\_Value.cpp
 
 Delete duplicate-value nodes from a sorted linked list | PS\_Make\_Node\_Unique.cpp
+
+Find Merge Point of Two Lists | PS\_Node\_Merge\_Points.cpp
