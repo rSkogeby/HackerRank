@@ -55,3 +55,5 @@ Tree: Top View | PS\_Tree\_Topview.cpp
 Tree: Level Order Traversal | PS\_Tree\_Levelorder\_Traversal.cpp
 
 Binary Search Tree : Insertion | PS\_BST\_Insert\_Value.cpp
+
+Tree: Huffman Decoding | PS\_Tree\_Huffman\_Decoding.cpp
