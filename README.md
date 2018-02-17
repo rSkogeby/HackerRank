@@ -43,3 +43,5 @@ Inserting a Node Into a Sorted Doubly Linked List | PS\_Doubly\_Linked\_List\_No
 Reverse a doubly linked list | PS\_Doubly\_Linked\_List\_Reverse.cpp 
 
 Tree: Preorder Traversal | PS\_Tree\_Preorder\_Traversal.cpp
+
+Tree: Postorder Traversal | PS\_Tree\_Postorder\_Traversal.cpp
