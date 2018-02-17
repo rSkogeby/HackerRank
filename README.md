@@ -39,3 +39,7 @@ Delete duplicate-value nodes from a sorted linked list | PS\_Make\_Node\_Unique.
 Find Merge Point of Two Lists | PS\_Node\_Merge\_Points.cpp
 
 Inserting a Node Into a Sorted Doubly Linked List | PS\_Doubly\_Linked\_List\_NodeInsertOrderedAscending.cpp
+
+
+Reverse a doubly linked list | PS\_Doubly\_Linked\_List\_Reverse.cpp 
+
