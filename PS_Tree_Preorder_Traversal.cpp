@@ -5,7 +5,7 @@ void preOrder(node *root) {
   
   if(!root) return;
   
-  cout << root->data << " ";
+  std::cout << root->data << " ";
   preOrder(root->left);
   preOrder(root->right);
 
