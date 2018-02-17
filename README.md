@@ -53,3 +53,5 @@ Tree: Height of a Binary Tree | PS\_Tree\_Height.cpp
 Tree: Top View | PS\_Tree\_Topview.cpp
 
 Tree: Level Order Traversal | PS\_Tree\_Levelorder\_Traversal.cpp
+
+Binary Search Tree : Insertion | PS\_BST\_Insert\_Value.cpp
