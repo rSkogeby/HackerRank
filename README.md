@@ -45,3 +45,5 @@ Reverse a doubly linked list | PS\_Doubly\_Linked\_List\_Reverse.cpp
 Tree: Preorder Traversal | PS\_Tree\_Preorder\_Traversal.cpp
 
 Tree: Postorder Traversal | PS\_Tree\_Postorder\_Traversal.cpp
+
+Tree: Inorder Traversal | PS\_Tree\_Inorder\_Traversal.cpp
