@@ -65,3 +65,5 @@ Day 19: Interfaces | Daily\_Day\_19.cpp
 QHEAP1 | PS\_QHEAP1.cpp
 
 Jesse and Cookies | PS\_Jesse\_and\_Cookies.cpp
+
+Maximum Element | PS\_Maximum\_Element.cpp
