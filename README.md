@@ -61,3 +61,5 @@ Tree: Huffman Decoding | PS\_Tree\_Huffman\_Decoding.cpp
 Binary Search Tree : Lowest Common Ancestor | PS\_BST\_LCA.cpp
 
 Day 19: Interfaces | Daily\_Day\_19.cpp
+
+QHEAP1 | PS\_QHEAP1.cpp
