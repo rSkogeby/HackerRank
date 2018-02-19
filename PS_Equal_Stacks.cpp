@@ -57,9 +57,9 @@ class CylinderStack : public Cylinder {
           if( v.getHeight() > 1 ){
             if( i == 0 ) std::cout << "[";
             else if( i == v.getHeight()-1 ) std::cout << "]";
-            else std::cout << "-";
+            else std::cout << "\u039E";
           } else {
-            std::cout << "-";
+            std::cout << "\u039E";
           }
         }
       }
@@ -101,7 +101,9 @@ void makeStacksEqualHeight(CylinderStack* s1, CylinderStack* s2, CylinderStack* 
     //   s3->getTopCylinderHeight() < s2->getTopCylinderHeight()){
     //  removeTop(s3);  
     //}
-   
+    
+
+
     std::cin.get(); 
     s1->drawCylinderStack(); 
     s2->drawCylinderStack(); 
@@ -111,13 +113,20 @@ void makeStacksEqualHeight(CylinderStack* s1, CylinderStack* s2, CylinderStack* 
 
 }
 
+void calcMaxEqualHeight(CylinderStack* s1, CylinderStack* s2, CylinderStack* s3){
+
+  
+  
+
+}
+
 int main(){
   CylinderStack* STACK_ONE = new CylinderStack();
   CylinderStack* STACK_TWO = new CylinderStack();
   CylinderStack* STACK_THREE = new CylinderStack();
   
   int cylHeight;
-  int numCyls = 5;
+  int numCyls = 10;
   srand (time(NULL)); // initialize random seed
   for ( int i = 0; i < numCyls; i++){
      cylHeight = rand() % 10 + 1;
