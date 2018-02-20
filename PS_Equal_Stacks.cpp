@@ -70,6 +70,9 @@ class CylinderStack : public Cylinder {
       cylinders.pop_back();
       numberCylinders--;
     }
+    std::vector<Cylinder> getCylinders(){
+      return cylinders;
+    }
     CylinderStack();
     ~CylinderStack();
 };
@@ -109,14 +112,22 @@ void makeStacksEqualHeight(CylinderStack* s1, CylinderStack* s2, CylinderStack* 
     s2->drawCylinderStack(); 
     s3->drawCylinderStack(); 
   } 
-
-
 }
 
 void calcMaxEqualHeight(CylinderStack* s1, CylinderStack* s2, CylinderStack* s3){
-
-  
-  
+  std::vector<Cylinder> v1 = s1->getCylinders(); 
+  std::vector<Cylinder> v2 = s2->getCylinders();
+  std::vector<Cylinder> v3 = s3->getCylinders(); 
+     
+  for ( auto ve1 : v1 ) {
+    v1.push_back(ve1.getHeight());
+  }
+  for ( auto ve2 : v2 ) {
+    v2.push_back(ve2.getHeight());
+  }
+  for ( auto ve3 : v3 ) {
+    v3.push_back(ve3.getHeight());
+  }
 
 }
 
