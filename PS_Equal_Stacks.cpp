@@ -118,7 +118,8 @@ void calcMaxEqualHeight(CylinderStack* s1, CylinderStack* s2, CylinderStack* s3)
   std::vector<int> t1; 
   std::vector<int> t2;
   std::vector<int> t3;
-     
+
+ // Fill vectors of heights 
   for ( auto ve1 : v1 ) {
     t1.push_back(ve1.getHeight());
   }
@@ -128,7 +129,33 @@ void calcMaxEqualHeight(CylinderStack* s1, CylinderStack* s2, CylinderStack* s3)
   for ( auto ve3 : v3 ) {
     t3.push_back(ve3.getHeight());
   }
+ 
+ // Calc cumulative heights
+  int prev = 0;
+  for( auto te1 : t1 ){
+    te1 += prev;
+    prev = te1;
+    std::cout << te1 << " ";
+  }
+    std::cout << "\n";
+  prev = 0;
+  for( auto te2 : t2 ){
+    te2 += prev;
+    prev = te2;
+    std::cout << te2 << " ";
+  }
+    std::cout << "\n";
+  prev = 0;
+  for( auto te3 : t3 ){
+    te3 += prev;
+    prev = te3;
+    std::cout << te3 << " ";
+  }
+    std::cout << "\n";
 
+  // Find largest equal number in cum. heights
+    
+    
 }
 
 int main(){
@@ -157,7 +184,8 @@ int main(){
   //      STACK_ONE->getStackHeight() != STACK_THREE->getStackHeight()){
   //  
   //} 
-  makeStacksEqualHeight(STACK_ONE,STACK_TWO,STACK_THREE);
+ // makeStacksEqualHeight(STACK_ONE,STACK_TWO,STACK_THREE);
+  calcMaxEqualHeight(STACK_ONE,STACK_TWO,STACK_THREE);
   delete STACK_ONE;
   delete STACK_TWO;
   delete STACK_THREE;
