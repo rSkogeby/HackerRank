@@ -117,6 +117,9 @@ void calcMaxEqualHeight(CylinderStack* s1, CylinderStack* s2, CylinderStack* s3)
   std::vector<int> t1; 
   std::vector<int> t2;
   std::vector<int> t3;
+  std::vector<int> cum1; 
+  std::vector<int> cum2;
+  std::vector<int> cum3;
 
  // Fill vectors of heights 
   for ( auto ve1 : v1 ) {
@@ -134,6 +137,7 @@ void calcMaxEqualHeight(CylinderStack* s1, CylinderStack* s2, CylinderStack* s3)
   for( auto te1 : t1 ){
     te1 += prev;
     prev = te1;
+    cum1.push_back(te1);
     std::cout << te1 << " ";
   }
     std::cout << "\n";
@@ -141,6 +145,7 @@ void calcMaxEqualHeight(CylinderStack* s1, CylinderStack* s2, CylinderStack* s3)
   for( auto te2 : t2 ){
     te2 += prev;
     prev = te2;
+    cum2.push_back(te2);
     std::cout << te2 << " ";
   }
     std::cout << "\n";
@@ -148,26 +153,29 @@ void calcMaxEqualHeight(CylinderStack* s1, CylinderStack* s2, CylinderStack* s3)
   for( auto te3 : t3 ){
     te3 += prev;
     prev = te3;
+    cum3.push_back(te3);
     std::cout << te3 << " ";
   }
   std::cout << "\n";
 
   // Find largest equal number in cum. heights
-  int i;
-  if ( t1.size() > t2.size() && t1.size() > t3.size() ){
-    i = t1.size();
-  } else if ( t2.size() > t1->size() && t2.size() > t3->size() ) {
-    i = t2.size();
-  } else { 
-    i = t3.size();
-  }
-
-  while( i-- ){
-    t1[i] == 
-    if( t1.back() == t2.back() ){
-      
+  int largestEqualIdx[3];
+  for( vector<int>::iterator te1 = cum1.begin(); te1 < cum1.end(); ++te1 ){
+    for( vector<int>::iterator te2 = cum2.begin(); te2 < cum2.end(); ++te2 ){
+      if ( *te1 == *te2 ) {
+        for( vector<int>::iterator te3 = cum3.begin(); te3 < cum3.end(); ++te3 ){
+          if( *te1 == *te3 ){
+            largestEqualIdx[0] = te1-cum1.begin();
+            largestEqualIdx[1] = te2-cum2.begin();
+            largestEqualIdx[2] = te3-cum3.begin();
+            std::cout << te1 << " " << "\n";
+            break;
+          }
+        }
+      }
     }
   }
+
     
     
 }
