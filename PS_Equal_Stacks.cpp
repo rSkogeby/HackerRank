@@ -14,7 +14,6 @@ class Cylinder{
     int getHeight(){
       return height;
     }
-
 };
 
 class CylinderStack : public Cylinder {
@@ -151,9 +150,24 @@ void calcMaxEqualHeight(CylinderStack* s1, CylinderStack* s2, CylinderStack* s3)
     prev = te3;
     std::cout << te3 << " ";
   }
-    std::cout << "\n";
+  std::cout << "\n";
 
   // Find largest equal number in cum. heights
+  int i;
+  if ( t1.size() > t2.size() && t1.size() > t3.size() ){
+    i = t1.size();
+  } else if ( t2.size() > t1->size() && t2.size() > t3->size() ) {
+    i = t2.size();
+  } else { 
+    i = t3.size();
+  }
+
+  while( i-- ){
+    t1[i] == 
+    if( t1.back() == t2.back() ){
+      
+    }
+  }
     
     
 }
