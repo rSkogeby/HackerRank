@@ -71,3 +71,5 @@ Maximum Element | PS\_Maximum\_Element.cpp
 Day 25: Running Time and Complexity | Daily\_Day\_15.cpp
 
 Equal Stacks | PS\_Equal\_Stacks\_Solution.cpp
+
+Game of Two Stacks | PS\_Game\_of\_Two\_Stacks.cpp
