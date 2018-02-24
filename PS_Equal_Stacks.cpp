@@ -160,15 +160,15 @@ void calcMaxEqualHeight(CylinderStack* s1, CylinderStack* s2, CylinderStack* s3)
 
   // Find largest equal number in cum. heights
   int largestEqualIdx[3];
-  for( vector<int>::iterator te1 = cum1.begin(); te1 < cum1.end(); ++te1 ){
-    for( vector<int>::iterator te2 = cum2.begin(); te2 < cum2.end(); ++te2 ){
+  for( std::vector<int>::iterator te1 = cum1.begin(); te1 < cum1.end(); ++te1 ){
+    for( std::vector<int>::iterator te2 = cum2.begin(); te2 < cum2.end(); ++te2 ){
       if ( *te1 == *te2 ) {
-        for( vector<int>::iterator te3 = cum3.begin(); te3 < cum3.end(); ++te3 ){
+        for( std::vector<int>::iterator te3 = cum3.begin(); te3 < cum3.end(); ++te3 ){
           if( *te1 == *te3 ){
             largestEqualIdx[0] = te1-cum1.begin();
             largestEqualIdx[1] = te2-cum2.begin();
             largestEqualIdx[2] = te3-cum3.begin();
-            std::cout << te1 << " " << "\n";
+            std::cout << *te1 << " " << "\n";
             break;
           }
         }
@@ -184,18 +184,28 @@ int main(){
   CylinderStack* STACK_ONE = new CylinderStack();
   CylinderStack* STACK_TWO = new CylinderStack();
   CylinderStack* STACK_THREE = new CylinderStack();
+  int h1[] = {3,2,5,6,2,3,2,4}; 
+  int h2[] = {1,1,4,5,4,2,1,2}; 
+  int h3[] = {4,5,1,1,4,3,2,1};
+  
+   
   
   int cylHeight;
-  int numCyls = 10;
+  int numCyls = 8;
   srand (time(NULL)); // initialize random seed
-  for ( int i = 0; i < numCyls; i++){
-     cylHeight = rand() % 10 + 1;
-     STACK_ONE->fillCylinderStackNew(cylHeight);
-     cylHeight = rand() % 10 + 1;
-     STACK_TWO->fillCylinderStackNew(cylHeight);
-     cylHeight = rand() % 10 + 1;
-     STACK_THREE->fillCylinderStackNew(cylHeight);
+  //for ( int i = 0; i < numCyls; i++){
+  //   cylHeight = rand() % 10 + 1;
+  //   STACK_ONE->fillCylinderStackNew(cylHeight);
+  //   cylHeight = rand() % 10 + 1;
+  //   STACK_TWO->fillCylinderStackNew(cylHeight);
+  //   cylHeight = rand() % 10 + 1;
+  //   STACK_THREE->fillCylinderStackNew(cylHeight);
 
+  //}
+  for ( int i = 0; i < numCyls; i++){
+     STACK_ONE->fillCylinderStackNew  (h1[i]);
+     STACK_TWO->fillCylinderStackNew  (h2[i]);
+     STACK_THREE->fillCylinderStackNew(h3[i]);
   }
 
   STACK_ONE->drawCylinderStack();
