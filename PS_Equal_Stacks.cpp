@@ -159,6 +159,7 @@ void calcMaxEqualHeight(CylinderStack* s1, CylinderStack* s2, CylinderStack* s3)
   std::cout << "\n";
 
   // Find largest equal number (LEN) in cum. heights
+  bool out = false;
   int largestEqualIdx[3];
   for( std::vector<int>::iterator te1 = cum1.begin(); te1 < cum1.end(); ++te1 ){
     for( std::vector<int>::iterator te2 = cum2.begin(); te2 < cum2.end(); ++te2 ){
@@ -169,18 +170,24 @@ void calcMaxEqualHeight(CylinderStack* s1, CylinderStack* s2, CylinderStack* s3)
             largestEqualIdx[1] = te2-cum2.begin();
             largestEqualIdx[2] = te3-cum3.begin();
             std::cout << *te1 << " " << "\n";
+            out = true;
             break;
           }
         }
       }
+    if(out) break;
     }
+    out = false;
   }
 
   // Calculate total number of cylinders to remove to reach 
   // index of LEN in all stacks
-  largestEqualIdx
+  int numCyl = cum1.size()-largestEqualIdx[0]-1;
+  numCyl +=    cum2.size()-largestEqualIdx[1]-1;
+  numCyl +=    cum3.size()-largestEqualIdx[2]-1;
 
-    
+  std::cout << cum1[largestEqualIdx[0]] << std::endl; 
+ //std::cout << numCyl << std::endl; 
     
 }
 
@@ -191,6 +198,7 @@ int main(){
   int h1[] = {3,2,5,6,2,3,2,4}; 
   int h2[] = {1,1,4,5,4,2,1,2}; 
   int h3[] = {4,5,1,1,4,3,2,1};
+  
   
    
   

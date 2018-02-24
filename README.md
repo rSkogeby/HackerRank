@@ -69,3 +69,5 @@ Jesse and Cookies | PS\_Jesse\_and\_Cookies.cpp
 Maximum Element | PS\_Maximum\_Element.cpp
 
 Day 25: Running Time and Complexity | Daily\_Day\_15.cpp
+
+Equal Stacks | PS\_Equal\_Stacks\_Solution.cpp
