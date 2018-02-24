@@ -158,7 +158,7 @@ void calcMaxEqualHeight(CylinderStack* s1, CylinderStack* s2, CylinderStack* s3)
   }
   std::cout << "\n";
 
-  // Find largest equal number in cum. heights
+  // Find largest equal number (LEN) in cum. heights
   int largestEqualIdx[3];
   for( std::vector<int>::iterator te1 = cum1.begin(); te1 < cum1.end(); ++te1 ){
     for( std::vector<int>::iterator te2 = cum2.begin(); te2 < cum2.end(); ++te2 ){
@@ -175,6 +175,10 @@ void calcMaxEqualHeight(CylinderStack* s1, CylinderStack* s2, CylinderStack* s3)
       }
     }
   }
+
+  // Calculate total number of cylinders to remove to reach 
+  // index of LEN in all stacks
+  largestEqualIdx
 
     
     
