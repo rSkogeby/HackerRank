@@ -75,3 +75,5 @@ Equal Stacks | PS\_Equal\_Stacks\_Solution.cpp
 Game of Two Stacks | PS\_Game\_of\_Two\_Stacks.cpp
 
 Day 26: Nested Logic | Daily\_Day\_26.cpp
+
+Kangaroo | PS\_Kangaroo.cpp
