@@ -14,23 +14,23 @@ void findMax(std::vector<int> vec){
 }
 
 int main(){
-  int n;
+  long int n;
   std::cin >> n; // size of array
-  int m;
+  long int m;
   std::cin >> m; // number of operations
 //  std::vector<int> vec(n,0);
   long int *vec = new long int[n+1]();
-  int a; // interval start
-  int b; // interval end
-  int val;
+  long int a; // interval start
+  long int b; // interval end
+  long int val;
   for(int i = 0; i < m; i++){
     std::cin >> a >> b >> val;
     vec[a] += val;
     if( b < n ) vec[b+1] -= val;
   }
-  printVec(vec,n);
-  int x = 0;
-  int max;
+//  printVec(vec,n);
+  long int x = 0;
+  long int max = 0;
   for(int i = 1; i <= n; i++){
     x = x + vec[i];
     if(max < x) max = x;
