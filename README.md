@@ -79,3 +79,5 @@ Day 26: Nested Logic | Daily\_Day\_26.cpp
 Kangaroo | PS\_Kangaroo.cpp
 
 Sparse Arrays | PS\_Sparse\_Arrays.cpp
+
+Array Manipulation | PS\_Array\_Manipulation.cpp
