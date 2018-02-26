@@ -8,7 +8,6 @@
 using namespace std;
 
 const unsigned int N = 10000001;
-
 struct Workshop{
   int startTime;
   int duration;
