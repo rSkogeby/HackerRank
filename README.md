@@ -81,3 +81,5 @@ Kangaroo | PS\_Kangaroo.cpp
 Sparse Arrays | PS\_Sparse\_Arrays.cpp
 
 Array Manipulation | PS\_Array\_Manipulation.cpp
+
+Cycle Detection | PS\_Cycle\_Detection.cpp
