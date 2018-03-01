@@ -9,7 +9,7 @@ struct Node{
 
 Node* setChildren(Node*,int,int); 
 Node* newNode(int); 
-Node* levelOrderInsert(Node*,int,int,int); 
+Node* buildTree(Node*,int,int,int); 
 
 
 int main(){
@@ -35,7 +35,7 @@ int main(){
   Node* root = NULL;
   for( int i = 0; i < numNodes; i++ ){
     std::cin >> idxLeft >> idxRight;
-    root = levelOrderInsert(root,idxLeft,idxRight,i+1);
+    root = buildTree(root,idxLeft,idxRight,i+1);
   }
 
 
@@ -71,16 +71,18 @@ Node* newNode(int idx){
 }
 
 // LEVELORDERINSERT
-Node* levelOrderInsert(Node* root,int iL,int iR, int idx){
+Node* buildTree(Node* root,int iL,int iR, int idx){
   if( !root && idx == 1 ){
     root = newNode(idx);
     root = setChildren(root, iL,iR);
     return root;
   }
-
-  while( root ){
   
+  
+  Node* rPtr = root;
+  while( root ){
+    root = root->left; 
   }
 
-  return root;
+  return rPtr;
 }
